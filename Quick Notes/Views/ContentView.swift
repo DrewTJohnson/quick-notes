@@ -61,17 +61,19 @@ struct ContentView: View {
                 VStack {
 //                    Text("You are signed in")
 //
-//                    Button(action: {
-//                        viewModel.signOut()
-//                    }, label: {
-//                        Text("Sign Out")
-//                            .frame(width: 200, height: 50)
-//                            .foregroundColor(Color.white)
-//                            .cornerRadius(20)
-//                            .background(Color.blue)
-//                            .padding()
-//                    })
+                    
                     HomeView()
+                    
+                    Button(action: {
+                        viewModel.signOut()
+                    }, label: {
+                        Text("Sign Out")
+                            .frame(width: 200, height: 50)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(20)
+                            .background(Color.blue)
+                            .padding()
+                    })
                 }
             } else {
                 SignInView()

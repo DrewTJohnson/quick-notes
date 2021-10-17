@@ -27,6 +27,7 @@ struct HomeView: View {
                 Divider()
                 
                 Spacer()
+                
             }
     }
 }

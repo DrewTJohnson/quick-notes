@@ -9,13 +9,19 @@ import SwiftUI
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 import Combine
+import FirebaseAuth
 
 struct NewNoteView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+
     @ObservedObject var model = FirestoreManager()
     
+    @State var userId: String? = Auth.auth().currentUser?.uid
     @State var title = ""
     @State var noteText = ""
+    
+    @State private var showPopover = false
     
     
     var body: some View {
@@ -38,7 +44,8 @@ struct NewNoteView: View {
         
         HStack {
             Button("Save", action: {
-                self.model.createNote(title: title, noteText: noteText)
+                presentationMode.wrappedValue.dismiss()
+                self.model.createNote(title: title, noteText: noteText, userId: userId!)
             })
                 .padding()
                 .frame(width: 200, height: 50)

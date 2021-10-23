@@ -6,8 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct HomeView: View {
+    
+    @State var userId: String? = Auth.auth().currentUser?.uid
+    @State var title = ""
+    @State var noteText = ""
+    @State var showingSheet = false
+    
+    @State var db = Firestore.firestore()
+    
     
     var body: some View {
             VStack {
@@ -20,11 +30,18 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    NavigationLink("Add New", destination: NewNoteView())
+                    Button("Add New") {
+                        self.showingSheet.toggle()
+                    }
+                    .sheet(isPresented: $showingSheet) {
+                        NewNoteView()
+                    }
                         .padding()
                         .navigationBarHidden(true)
                 }
                 Divider()
+                
+                NotesListView()
                 
                 Spacer()
                 

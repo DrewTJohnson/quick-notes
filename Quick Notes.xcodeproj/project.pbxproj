@@ -19,6 +19,7 @@
 		869B7672271BDF4C005DFAA3 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B7671271BDF4C005DFAA3 /* CreateAccountView.swift */; };
 		869B7676271BE348005DFAA3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B7675271BE348005DFAA3 /* HomeView.swift */; };
 		869B7678271BEEBD005DFAA3 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B7677271BEEBD005DFAA3 /* NewNoteView.swift */; };
+		86FC199B271CCB21007E35F4 /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FC199A271CCB21007E35F4 /* NotesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		869B7671271BDF4C005DFAA3 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		869B7675271BE348005DFAA3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		869B7677271BEEBD005DFAA3 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
+		86FC199A271CCB21007E35F4 /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
 		BFE20D34A736F6BDA9BF405D /* Pods_Quick_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C9E58615DD992CD0E7714 /* Pods-Quick Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Notes.release.xcconfig"; path = "Target Support Files/Pods-Quick Notes/Pods-Quick Notes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				869B7675271BE348005DFAA3 /* HomeView.swift */,
 				869B7677271BEEBD005DFAA3 /* NewNoteView.swift */,
 				861824CE271C7CD10014DCE4 /* NoteViewModel.swift */,
+				86FC199A271CCB21007E35F4 /* NotesListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				8610F1CF271B9A4C0094E05D /* Quick_NotesApp.swift in Sources */,
 				869B7672271BDF4C005DFAA3 /* CreateAccountView.swift in Sources */,
 				869B7676271BE348005DFAA3 /* HomeView.swift in Sources */,
+				86FC199B271CCB21007E35F4 /* NotesListView.swift in Sources */,
 				869B7670271BDF15005DFAA3 /* AuthenticationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

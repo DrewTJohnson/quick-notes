@@ -11,6 +11,7 @@ import FirebaseAuth
 class AppViewModel: ObservableObject {
     
     let auth = Auth.auth()
+    let userId = Auth.auth().currentUser?.uid
     
     @Published var signedIn = false
     
@@ -64,16 +65,16 @@ struct ContentView: View {
                     
                     HomeView()
                     
-                    Button(action: {
-                        viewModel.signOut()
-                    }, label: {
-                        Text("Sign Out")
-                            .frame(width: 200, height: 50)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(20)
-                            .background(Color.blue)
-                            .padding()
-                    })
+//                    Button(action: {
+//                        viewModel.signOut()
+//                    }, label: {
+//                        Text("Sign Out")
+//                            .frame(width: 200, height: 50)
+//                            .foregroundColor(Color.white)
+//                            .cornerRadius(20)
+//                            .background(Color.blue)
+//                            .padding()
+//                    })
                 }
             } else {
                 SignInView()
